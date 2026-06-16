@@ -14,5 +14,6 @@ setup(
         "chromadb>=0.5.0",
         "sentence-transformers>=3.0.0",
         "langchain-community>=0.0.1",
+        "langchain_groq",
     ],
 )

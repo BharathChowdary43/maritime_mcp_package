@@ -10,17 +10,17 @@ The platform features a **Dual-Backend Server Architecture**, allowing runtime s
 
 To demonstrate architectural evolution and allow comparative benchmarking, this platform is delivered with two independent Model Context Protocol (MCP) server implementations. Both seamlessly expose identical tool schemas over standardized `stdio` JSON-RPC pipes but operate on completely different internal data layers.
 
-1. The Advanced Production Backend (maritime_mcp/server.py)
+**1. The Advanced Production Backend (maritime_mcp/server.py)**
 This server imports a completely isolated, standalone rag/ sub-package. It translates conversational text queries into dense mathematical vector coordinates, executes local cosine similarity distance lookups against a persistent embedded cache database on disk, evaluates confidence scores to drop out-of-domain noise, and wraps grounding evidence inside defensive XML tags to suppress downstream LLM hallucinations.
 
-2. The Baseline Substring Backend (maritime_mcp/server_regex.py)
+**2. The Baseline Substring Backend (maritime_mcp/server_regex.py)**
 This server executes lookups using a traditional Inverted-Index Regex Boundary Approach. It isolates alphabetic tokens from incoming conversational strings, performs bidirectional substring intersection matches against raw flat JSON text records, and returns hits based on raw character overlaps. This serves as the benchmark foundation to measure the accuracy jump provided by semantic understanding.
 
 # Step-by-Step Scratch Deployment Guide
 
 Follow these exact operational steps to deploy, synchronize, and run the platform from a completely clean directory.
 
-1. Target Directory Clone & Structure Check
+**1. Target Directory Clone & Structure Check**
 Ensure your physical workspace directory matches the structural tree matrix below before executing runtime scripts:
 
 ```text
@@ -48,7 +48,7 @@ maritime_mcp_package/
 └── run_tests.py                      # Master Integration Evaluation Suite
 ```
 
-2. Virtual Environment Isolation
+**2. Virtual Environment Isolation**
 Open a clean command terminal inside the root directory of your project folder and run the following routines to build and activate a clean virtual workspace:
 
 ## Create an isolated python virtual environment using uv
@@ -66,7 +66,7 @@ uv venv
 source .venv/bin/activate
 ```
 
-3. Editable Package Synchronization
+**3. Editable Package Synchronization**
 Instead of executing standalone pip additions, run an editable dependency installation script. This registers your package root folder globally within your active virtual environment path layout and automatically installs all required backend framework libraries (chromadb, sentence-transformers, torch, langgraph, etc.) using your system manifest files as the single source of truth:
 
 ```bash
@@ -75,7 +75,7 @@ uv pip install -e .
 
 (Note: If you run this file setup for the first time, your screen will output a collection list summary showing your packages built successfully.)
 
-4. Credentials Setup
+**4. Credentials Setup**
 Create a file explicitly named .env directly in your root workspace directory and add your Groq network Completion API secret credential key:
 
 ```bash
@@ -93,9 +93,11 @@ Run this diagnostic to test your raw JSON parsing logic and construct your persi
 python rag/ingestion/validate_ingestion.py
 ```
 
-**Expected Result:** The console will verify the parsing layout and output a summary showing your items loaded successfully. A new directory called rag/embeddings_db/ will be generated containing your local storage files.
+**Expected Result:** 
+The console will verify the parsing layout and output a summary showing your items loaded successfully. A new directory called rag/embeddings_db/ will be generated containing your local storage files.
 
-**Cache Test:** Execute the script a second time. The boot-up latency drops immediately to 0 milliseconds, and your logging logs a series of high-speed [DISK HIT] cache bypass entries.
+**Cache Test:** 
+Execute the script a second time. The boot-up latency drops immediately to 0 milliseconds, and your logging logs a series of high-speed [DISK HIT] cache bypass entries.
 
 ### Phase 2: Verify Semantic Retrieval & Synonym Translation Math
 Run this diagnostic to test how your system handles complex everyday user words that do not literally match the phrasing stored inside the source files:
@@ -104,7 +106,8 @@ Run this diagnostic to test how your system handles complex everyday user words 
 python rag/retrieval/validate_retrieval.py
 ```
 
-**Expected Result:** The engine queries your persistent disk, resolves synonyms like "bilge water sludge" against regulatory phrases like "oily mixtures," and returns the exact matching record along with its mathematical Cosine Distance Score.
+**Expected Result:** 
+The engine queries your persistent disk, resolves synonyms like "bilge water sludge" against regulatory phrases like "oily mixtures," and returns the exact matching record along with its mathematical Cosine Distance Score.
 
 ### Phase 3: Verify Grounding Context Envelope Layout
 Run this diagnostic to verify that your prompt context block applies the strict 0.55 distance cut-off score to discard irrelevant text noise, packaging the final payload cleanly inside structured XML grounding boundaries:
@@ -123,7 +126,8 @@ To execute your test matrix against the full persistent semantic RAG framework, 
 python run_tests.py
 ```
 
-**Output Trace:** Open the newly populated query_output.json file in your root workspace. Observe how the multi-agent graph effortlessly reads your structured XML context tags to synthesize grounding answers with zero hallucinations.
+**Output Trace:** 
+Open the newly populated query_output.json file in your root workspace. Observe how the multi-agent graph effortlessly reads your structured XML context tags to synthesize grounding answers with zero hallucinations.
 
 ## 2.Running with the Baseline Regex Keyword Backend
 To execute the baseline benchmark to test performance drops or run character matching verifications, adjust your application config launcher to execute maritime_mcp/server_regex.py as your tool server background pipe target, and trigger your evaluation suite:
@@ -137,7 +141,12 @@ python run_tests.py
 # Deep Observability Telemetry Matrix
 If you run into any validation anomalies or need to analyze how your system calculates vector relationships under the hood, open your auto-generated log structures inside rag/logs/:
 
-**ingestion.log:** Tracks the textification mapping process and documents structural data loading sequences.
-**retrieval.log:** Traces raw incoming strings, matching indexes, and records the exact calculated Cosine Distance Scores to expose semantic drift.
-**generation.log:** Logs the exact structural context envelope injected into the model's context window.
+### ingestion.log:###
+Tracks the textification mapping process and documents structural data loading sequences.
+
+### retrieval.log:###
+Traces raw incoming strings, matching indexes, and records the exact calculated Cosine Distance Scores to expose semantic drift.
+
+### generation.log:###
+Logs the exact structural context envelope injected into the model's context window.
 
