@@ -1,0 +1,14 @@
+{
+  "query_1": {
+    "prompt": "A vessel is 8nm offshore and needs to discharge bilge water. The SIRE inspector also asked about the passage plan during the last inspection. What MARPOL rules apply, and which SIRE question should the Chief Officer review?",
+    "response": "The MARPOL rules that apply to the vessel discharging bilge water 8nm offshore are as follows:\n\n- The ship must be proceeding en route.\n- The oil content of the bilge water must not exceed 15 ppm after passing through an approved separator.\n- The ship must not be within a Special Area.\n\nThe SIRE question that the Chief Officer should review is:\n\nIs there evidence that a passage plan was prepared before the current voyage, covering the full route from berth to berth, and was it approved by the master?"
+  },
+  "query_2": {
+    "prompt": "We are in the Baltic Sea and need to discharge treated sewage. What MARPOL restrictions apply, and which SIRE chapter would an inspector use to assess our compliance records?",
+    "response": "The MARPOL restrictions for discharging treated sewage in the Baltic Sea are as follows:\n\n- The ship must have an approved sewage treatment plant in operation.\n- The ship can discharge comminuted and disinfected sewage at a distance of more than 3 nautical miles from the nearest land.\n- The ship can discharge untreated sewage at a distance of more than 12 nautical miles from the nearest land.\n\nAn inspector would use SIRE Chapter 4 to assess the compliance records related to sewage discharge."
+  },
+  "query_3": {
+    "prompt": "We are transiting the North Sea ECA and our bunker delivery note shows 0.08% sulphur fuel. The SIRE inspector also wants to see our VDR annual performance test certificate and our last enclosed space entry permit. Are we MARPOL compliant, and which SIRE questions cover the other two findings?",
+    "response": "Based on the MARPOL compliance check, the vessel is not compliant with the sulphur content regulation in the North Sea ECA, as the fuel sulphur content is 0.08% which exceeds the allowed limit of 0.10% within ECAs.\n\nThe SIRE inspector's findings indicate that the VDR annual performance test certificate is not available, and the enclosed space entry permit is not issued.\n\nThe SIRE questions that cover the other two findings are:\n\n* VDR annual performance test certificate: SIRE 2.0 Inspection Checklist Reference Code: 4.3.1\n* Enclosed space entry permit: SIRE 2.0 Inspection Checklist Reference Code: 11.1.2"
+  }
+}

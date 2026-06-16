@@ -27,6 +27,5 @@ share/wheels/
 *.egg
 
 # Testing & Outputs
-query_output.json
 rag/embeddings_db/
 rag/logs/*.log

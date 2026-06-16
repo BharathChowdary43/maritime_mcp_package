@@ -10,17 +10,26 @@ The platform features a **Dual-Backend Server Architecture**, allowing runtime s
 
 To demonstrate architectural evolution and allow comparative benchmarking, this platform is delivered with two independent Model Context Protocol (MCP) server implementations. Both seamlessly expose identical tool schemas over standardized `stdio` JSON-RPC pipes but operate on completely different internal data layers.
 
-**1. The Advanced Production Backend (maritime_mcp/server.py)**
+### 1. The Advanced Production Backend (maritime_mcp/server.py):
 This server imports a completely isolated, standalone rag/ sub-package. It translates conversational text queries into dense mathematical vector coordinates, executes local cosine similarity distance lookups against a persistent embedded cache database on disk, evaluates confidence scores to drop out-of-domain noise, and wraps grounding evidence inside defensive XML tags to suppress downstream LLM hallucinations.
 
-**2. The Baseline Substring Backend (maritime_mcp/server_regex.py)**
+### 2. The Baseline Substring Backend (maritime_mcp/server_regex.py):
 This server executes lookups using a traditional Inverted-Index Regex Boundary Approach. It isolates alphabetic tokens from incoming conversational strings, performs bidirectional substring intersection matches against raw flat JSON text records, and returns hits based on raw character overlaps. This serves as the benchmark foundation to measure the accuracy jump provided by semantic understanding.
+
+---
+
+## 🛠️ Prerequisites & System Requirements
+Before initialization, ensure your host assessment machine satisfies the following baseline environmental dependencies:
+* **Python Runtime:** version 3.10 or higher
+* **Environment Manager:** `uv` (highly recommended for rapid installation) or `pip`
+
+---
 
 # Step-by-Step Scratch Deployment Guide
 
 Follow these exact operational steps to deploy, synchronize, and run the platform from a completely clean directory.
 
-**1. Target Directory Clone & Structure Check**
+### 1. Target Directory Clone & Structure Check:
 Ensure your physical workspace directory matches the structural tree matrix below before executing runtime scripts:
 
 ```text
@@ -44,11 +53,11 @@ maritime_mcp_package/
 │   └── generation/                   # Grounding Prompt Envelope Builder
 │
 ├── .env                              # Local Environment Secrets File
-├── pyproject.toml / setup.py         # Global Package Dependency Manifest
+├── setup.py                          # Global Package Dependency Manifest
 └── run_tests.py                      # Master Integration Evaluation Suite
 ```
 
-**2. Virtual Environment Isolation**
+### 2. Virtual Environment Isolation:
 Open a clean command terminal inside the root directory of your project folder and run the following routines to build and activate a clean virtual workspace:
 
 ## Create an isolated python virtual environment using uv
@@ -66,7 +75,7 @@ uv venv
 source .venv/bin/activate
 ```
 
-**3. Editable Package Synchronization**
+### 3. Editable Package Synchronization:
 Instead of executing standalone pip additions, run an editable dependency installation script. This registers your package root folder globally within your active virtual environment path layout and automatically installs all required backend framework libraries (chromadb, sentence-transformers, torch, langgraph, etc.) using your system manifest files as the single source of truth:
 
 ```bash
@@ -75,11 +84,28 @@ uv pip install -e .
 
 (Note: If you run this file setup for the first time, your screen will output a collection list summary showing your packages built successfully.)
 
-**4. Credentials Setup**
+### 4. Credentials Setup
 Create a file explicitly named .env directly in your root workspace directory and add your Groq network Completion API secret credential key:
 
 ```bash
-GROQ_API_KEY=your_actual_groq_api_key_here
+GROQ_API_KEY="your_actual_groq_api_key_here"
+```
+
+# Optional: MCP Client Visual Host Integration (Claude Desktop)
+To visually verify this system's execution inside an active MCP production environment, you can hook the server directly into your local Claude Desktop application by adding the following block to your sentry-config settings profile file (%APPDATA%\Claude\claude_desktop_config.json on Windows or ~/Library/Application Support/Claude/claude_desktop_config.json on macOS):
+
+```bash
+{
+  "mcpServers": {
+    "maritime-compliance-rag": {
+      "command": "python",
+      "args": ["-m", "maritime_mcp.server"],
+      "env": {
+        "PYTHONPATH": "C:/Users/YOUR_USER/PATH_TO_PROJECT/maritime_mcp_package"
+      }
+    }
+  }
+}
 ```
 
 # Core Component Validation Tracing
@@ -141,12 +167,11 @@ python run_tests.py
 # Deep Observability Telemetry Matrix
 If you run into any validation anomalies or need to analyze how your system calculates vector relationships under the hood, open your auto-generated log structures inside rag/logs/:
 
-### ingestion.log:###
+### ingestion.log:
 Tracks the textification mapping process and documents structural data loading sequences.
 
-### retrieval.log:###
+### retrieval.log:
 Traces raw incoming strings, matching indexes, and records the exact calculated Cosine Distance Scores to expose semantic drift.
 
-### generation.log:###
+### generation.log:
 Logs the exact structural context envelope injected into the model's context window.
-
