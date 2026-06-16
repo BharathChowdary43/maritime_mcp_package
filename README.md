@@ -50,25 +50,35 @@ maritime_mcp_package/
 Open a clean command terminal inside the root directory of your project folder and run the following routines to build and activate a clean virtual workspace:
 
 ## Create an isolated python virtual environment using uv
+```bash
 uv venv
+```
 
 # Activate the isolated virtual environment
 ## On Windows Command Prompt:
+```bash
 .venv\Scripts\activate
+```
 ## On macOS / Linux Terminal:
+```bash
 source .venv/bin/activate
+```
 
 3. Editable Package Synchronization
 Instead of executing standalone pip additions, run an editable dependency installation script. This registers your package root folder globally within your active virtual environment path layout and automatically installs all required backend framework libraries (chromadb, sentence-transformers, torch, langgraph, etc.) using your system manifest files as the single source of truth:
-## single build
+
+```bash
 uv pip install -e .
+```
 
 (Note: If you run this file setup for the first time, your screen will output a collection list summary showing your packages built successfully.)
 
 4. Credentials Setup
 Create a file explicitly named .env directly in your root workspace directory and add your Groq network Completion API secret credential key:
 
+```bash
 GROQ_API_KEY=your_actual_groq_api_key_here
+```
 
 # Core Component Validation Tracing
 
@@ -77,7 +87,9 @@ The platform is engineered with standalone verification files placed inside each
 ### Phase 1: Verify Data Ingestion, Textification, and Disk Cache Seeding
 Run this diagnostic to test your raw JSON parsing logic and construct your persistent binary vector files:
 
+```bash
 python rag/ingestion/validate_ingestion.py
+```
 
 **Expected Result:** The console will verify the parsing layout and output a summary showing your items loaded successfully. A new directory called rag/embeddings_db/ will be generated containing your local storage files.
 
@@ -86,27 +98,34 @@ python rag/ingestion/validate_ingestion.py
 ### Phase 2: Verify Semantic Retrieval & Synonym Translation Math
 Run this diagnostic to test how your system handles complex everyday user words that do not literally match the phrasing stored inside the source files:
 
+```bash
 python rag/retrieval/validate_retrieval.py
+```
 
 **Expected Result:** The engine queries your persistent disk, resolves synonyms like "bilge water sludge" against regulatory phrases like "oily mixtures," and returns the exact matching record along with its mathematical Cosine Distance Score.
 
 ### Phase 3: Verify Grounding Context Envelope Layout
 Run this diagnostic to verify that your prompt context block applies the strict 0.55 distance cut-off score to discard irrelevant text noise, packaging the final payload cleanly inside structured XML grounding boundaries:
 
+```bash
 python rag/generation/validate_generation.py
+```
 
 # Running the Platform (Global Execution)
 Once you have verified your component files locally, you can choose which backend server engine to run and validate against the primary evaluation testing suite.
 
-## Running with the Advanced Semantic RAG Backend (Default)
+## 1.Running with the Advanced Semantic RAG Backend (Default)
 To execute your test matrix against the full persistent semantic RAG framework, ensure your maritime_mcp/server.py file is referenced as the primary background tool pipeline target, then execute your master integration evaluation suite:
 
+```bash
 python run_tests.py
+```
 
 **Output Trace:** Open the newly populated query_output.json file in your root workspace. Observe how the multi-agent graph effortlessly reads your structured XML context tags to synthesize grounding answers with zero hallucinations.
 
-## Running with the Baseline Regex Keyword Backend
+## 2.Running with the Baseline Regex Keyword Backend
 To execute the baseline benchmark to test performance drops or run character matching verifications, adjust your application config launcher to execute maritime_mcp/server_regex.py as your tool server background pipe target, and trigger your evaluation suite:
+
 ```bash
 python run_tests.py
 ```
