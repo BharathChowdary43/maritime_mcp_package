@@ -1,0 +1,122 @@
+[
+  {
+    "id": "ISM-SEC1",
+    "ism_section": "ISM Code Section 1",
+    "title": "General — Objectives of the ISM Code",
+    "requirement_text": "The objectives of the ISM Code are to ensure safety at sea, prevention of human injury or loss of life, and avoidance of damage to the environment, in particular to the marine environment, and to property. The Company should establish safety and environmental-protection policies which describe how the objectives will be achieved.",
+    "frequency": "Standing — policy must be continuously maintained",
+    "evidence_required": "Documented safety and environmental protection policy signed by senior management; policy posted in company and on vessel; crew awareness of policy content.",
+    "applies_to_operations": ["all operations", "company SMS", "vessel SMS"],
+    "certificate": null
+  },
+  {
+    "id": "ISM-SEC3",
+    "ism_section": "ISM Code Section 3",
+    "title": "Company Responsibilities and Authority",
+    "requirement_text": "The Company should define and document the responsibility, authority, and interrelation of all personnel who manage, perform, and verify work relating to and affecting safety and pollution prevention. The person or persons responsible for implementation of the ISM Code must have direct access to the highest level of management.",
+    "frequency": "Standing — organisational structure must be documented",
+    "evidence_required": "Organisation chart with named positions; designation of the Designated Person Ashore (DPA); documented authority and responsibility of master; contact details for DPA accessible 24/7 on board.",
+    "applies_to_operations": ["company management", "vessel management", "DPA function"],
+    "certificate": null
+  },
+  {
+    "id": "ISM-SEC5",
+    "ism_section": "ISM Code Section 5",
+    "title": "Master's Responsibility and Authority",
+    "requirement_text": "The Company should clearly define and document the master's responsibility with regard to implementing the safety and environmental-protection policy of the Company. The Company should ensure that the SMS operating on board the ship contains a clear statement emphasizing the master's authority. The master has the overriding authority and the responsibility to make decisions with respect to safety and pollution prevention.",
+    "frequency": "Standing — master's authority must be documented in SMS",
+    "evidence_required": "SMS documentation explicitly stating master's overriding authority; master interview confirming understanding of authority; records of any instances where master exercised override authority.",
+    "applies_to_operations": ["all navigational operations", "cargo operations", "emergency response"],
+    "certificate": null
+  },
+  {
+    "id": "ISM-SEC6",
+    "ism_section": "ISM Code Section 6",
+    "title": "Resources and Personnel",
+    "requirement_text": "The Company should ensure that the master is properly qualified for command, fully conversant with the Company's SMS, and given the necessary support to carry out their duties safely. The Company should ensure that each ship is manned with qualified, certificated, and medically fit seafarers in accordance with national and international requirements.",
+    "frequency": "Continuous — crew certification and medical fitness must be maintained",
+    "evidence_required": "All officer and rating STCW certificates valid; medical fitness certificates (ENG1 or equivalent) for all crew; endorsements for trading area; flag state requirements met.",
+    "applies_to_operations": ["manning", "crew competency", "medical fitness", "familiarisation"],
+    "certificate": "Safe Manning Document; STCW certificates; Medical fitness certificates"
+  },
+  {
+    "id": "ISM-SEC7",
+    "ism_section": "ISM Code Section 7",
+    "title": "Development of Plans for Shipboard Operations",
+    "requirement_text": "The Company should establish procedures for the preparation of plans and instructions for key shipboard operations concerning the safety of the ship and the prevention of pollution. The various tasks involved should be defined and assigned to qualified personnel.",
+    "frequency": "Standing — operational procedures must be current and accessible",
+    "evidence_required": "SMS procedures for: anchoring, mooring, cargo handling, bunkering, tank cleaning, enclosed space entry, working aloft, hot work; procedures reviewed within last 12 months; crew aware of procedures.",
+    "applies_to_operations": ["cargo operations", "mooring", "anchoring", "bunkering", "maintenance", "hot work"],
+    "certificate": null
+  },
+  {
+    "id": "ISM-SEC8",
+    "ism_section": "ISM Code Section 8",
+    "title": "Emergency Preparedness",
+    "requirement_text": "The Company should establish procedures to identify, describe, and respond to potential emergency shipboard situations. The Company should establish programmes for drills and exercises to prepare for emergency actions. The SMS should provide for measures ensuring that the Company's organisation can respond at any time to hazards, accidents, and emergency situations involving its ships.",
+    "frequency": "Fire and abandon ship drills: monthly. Lifeboat drills: monthly. Man overboard: quarterly minimum. Full emergency exercises: annually.",
+    "evidence_required": "Muster list posted; drill records for past 12 months signed by master; evidence of all crew participation; drill debriefs recorded; emergency contact tree updated and tested.",
+    "applies_to_operations": ["emergency response", "fire response", "abandon ship", "man overboard", "pollution response"],
+    "certificate": null
+  },
+  {
+    "id": "ISM-SEC9",
+    "ism_section": "ISM Code Section 9",
+    "title": "Reports and Analysis of Non-Conformities, Accidents, and Hazardous Occurrences",
+    "requirement_text": "The SMS should include procedures ensuring that non-conformities, accidents, and hazardous situations are reported to the Company, investigated, and analysed with the objective of improving safety and pollution prevention. The Company should establish procedures for the implementation of corrective action, including measures intended to prevent recurrence.",
+    "frequency": "As required — reporting must occur within 24 hours for accidents; near misses should be reported promptly",
+    "evidence_required": "Non-conformity and near-miss report forms; completed reports from past 12 months; evidence of investigation; corrective actions assigned and closed within required timeframe; trends analysed.",
+    "applies_to_operations": ["accident investigation", "near miss reporting", "non-conformity management", "corrective action"],
+    "certificate": null
+  },
+  {
+    "id": "ISM-SEC10",
+    "ism_section": "ISM Code Section 10",
+    "title": "Ship and Equipment Maintenance",
+    "requirement_text": "The Company should establish procedures to ensure that the ship is maintained in conformity with the provisions of the relevant rules and regulations and with any additional requirements which may be established by the Company. The Company should ensure that inspections are held at appropriate intervals, any non-conformity is reported, and corrective action taken.",
+    "frequency": "Continuous — PMS must be actively maintained; critical equipment inspections per manufacturer schedule",
+    "evidence_required": "Planned maintenance system records for all critical equipment; overdue maintenance items documented and managed; statutory surveys current; dry-dock records; critical equipment defect log.",
+    "applies_to_operations": ["planned maintenance", "critical equipment", "statutory surveys", "dry-dock", "condition monitoring"],
+    "certificate": "Class certificates; Statutory certificates; PMS completion records"
+  },
+  {
+    "id": "ISM-SEC11",
+    "ism_section": "ISM Code Section 11",
+    "title": "Documentation",
+    "requirement_text": "The Company should establish and maintain procedures to control all documents and data which are relevant to the SMS. The Company should ensure that documents are available at all relevant locations, reviewed and revised as necessary, and invalid documents are promptly removed from all points of issue or use.",
+    "frequency": "Standing — document control must be active; review intervals per company procedure (typically annual for critical procedures)",
+    "evidence_required": "Document control register with revision history; procedures showing review dates; obsolete documents removed or clearly marked; crew able to locate current versions of relevant procedures.",
+    "applies_to_operations": ["document control", "SMS maintenance", "procedure management", "record keeping"],
+    "certificate": null
+  },
+  {
+    "id": "ISM-SEC12",
+    "ism_section": "ISM Code Section 12",
+    "title": "Company Verification, Review, and Evaluation",
+    "requirement_text": "The Company should carry out internal safety audits to verify whether safety and pollution-prevention activities comply with the SMS. The Company should periodically evaluate the efficiency and when needed review the SMS in accordance with procedures established by the Company. The master should periodically review the SMS and report its deficiencies to the Company.",
+    "frequency": "Internal audits: annually minimum; master's review: annually or as required; management review: annually",
+    "evidence_required": "Internal audit records for past 12–24 months; findings, corrective actions, and close-out records; master's review report; evidence of SMS revisions based on audit findings.",
+    "applies_to_operations": ["internal audit", "management review", "SMS improvement", "corrective action"],
+    "certificate": "Document of Compliance (DOC); Safety Management Certificate (SMC)"
+  },
+  {
+    "id": "ISM-SEC6-FAMI",
+    "ism_section": "ISM Code Section 6.3",
+    "title": "Familiarisation of New Personnel and Personnel Transferred to New Assignments",
+    "requirement_text": "The Company should ensure that all personnel involved in the Company's SMS are given proper familiarisation with their duties before being assigned to a ship or before assuming new responsibilities. Instructions which are essential to be provided prior to sailing should be identified, documented, and given.",
+    "frequency": "Each time crew join the vessel or take on new responsibilities",
+    "evidence_required": "Completed vessel-specific familiarisation checklists signed by master and officer; records of pre-joining instructions; evidence of equipment-specific familiarisation for officers operating complex systems (ECDIS, DP, cargo control).",
+    "applies_to_operations": ["crew joining", "new assignments", "officer handover", "equipment familiarisation"],
+    "certificate": "Familiarisation checklists retained for minimum 12 months"
+  },
+  {
+    "id": "ISM-SEC8-DRILL",
+    "ism_section": "ISM Code Section 8.2",
+    "title": "Drills and Exercises — Enclosed Space Entry",
+    "requirement_text": "Enclosed space entry drills must be conducted on board to ensure that personnel are familiar with emergency rescue procedures from enclosed spaces. These drills must include use of rescue equipment, atmospheric testing procedures, and communication protocols.",
+    "frequency": "Enclosed space entry drills: at intervals not exceeding two months",
+    "evidence_required": "Enclosed space entry drill records with date, participants, equipment used, and debriefs; rescue equipment inspected before each drill; permit-to-work system exercised; master's signature on records.",
+    "applies_to_operations": ["enclosed space entry", "rescue operations", "atmosphere testing", "permit-to-work"],
+    "certificate": "Drill records retained on board for minimum 12 months"
+  }
+]

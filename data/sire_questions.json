@@ -1,0 +1,182 @@
+[
+  {
+    "ref": "1.1.1",
+    "chapter": 1,
+    "chapter_title": "Leadership & Management",
+    "question_text": "Is there evidence that the master has a clear understanding of the company's Safety Management System and their responsibilities under it?",
+    "objective": "To verify that the master is familiar with the SMS and can demonstrate active engagement with its requirements.",
+    "expected_evidence": "Master interview; SMS manual accessible on bridge; master's review records; evidence of master's override authority documented.",
+    "guidance_notes": "The master should be able to articulate key SMS elements without referring to documentation. Look for recent SMS review signatures and any master's review logs."
+  },
+  {
+    "ref": "1.2.3",
+    "chapter": 1,
+    "chapter_title": "Leadership & Management",
+    "question_text": "Does the company's Safety Management System include a documented procedure for reporting and investigating near misses and hazardous occurrences?",
+    "objective": "To confirm that a functioning near-miss reporting culture exists and that reports lead to corrective actions.",
+    "expected_evidence": "Near-miss report forms or digital equivalent; completed near-miss reports from the past 12 months; evidence of corrective actions closed; crew awareness of reporting procedure.",
+    "guidance_notes": "Check whether crew report near misses voluntarily or only under pressure. A zero near-miss count may indicate under-reporting rather than a safe vessel."
+  },
+  {
+    "ref": "1.3.2",
+    "chapter": 1,
+    "chapter_title": "Leadership & Management",
+    "question_text": "Are there records confirming that all officers have received an appropriate familiarisation to the vessel's SMS, emergency procedures, and their assigned duties prior to assuming responsibilities?",
+    "objective": "To verify that no officer has assumed safety-critical duties without documented familiarisation.",
+    "expected_evidence": "Completed familiarisation checklists signed by master and officer; records retained on board for at least 12 months; evidence of vessel-specific rather than generic familiarisation.",
+    "guidance_notes": "Particular attention should be paid to officers who joined within the past three months. Generic company familiarisation does not satisfy vessel-specific requirements."
+  },
+  {
+    "ref": "2.1.1",
+    "chapter": 2,
+    "chapter_title": "Crew Management",
+    "question_text": "Does the vessel maintain a minimum safe manning document and is the vessel currently crewed in compliance with it?",
+    "objective": "To confirm the vessel meets flag state minimum manning requirements at all times.",
+    "expected_evidence": "Safe Manning Document (SMD) issued by flag state; current crew list; comparison demonstrating compliance; documentation of any approved temporary deviations.",
+    "guidance_notes": "Verify that the SMD is the current version. Check that all positions listed as mandatory are occupied by certificated personnel."
+  },
+  {
+    "ref": "2.3.4",
+    "chapter": 2,
+    "chapter_title": "Crew Management",
+    "question_text": "Are rest hour records maintained for all watchkeeping officers and ratings, and is there evidence of compliance with STCW and MLC 2006 requirements?",
+    "objective": "To verify that seafarers are not working beyond maximum hours of work or below minimum hours of rest.",
+    "expected_evidence": "Rest hour records for all watchkeepers for the current and previous month; master's review signature; records of any deviations with justification; absence of systematic violations.",
+    "guidance_notes": "Inspect for patterns suggesting records are being completed retrospectively (uniform handwriting, identical entries across different crew). Software-generated records should be cross-checked against officer interviews."
+  },
+  {
+    "ref": "3.1.1",
+    "chapter": 3,
+    "chapter_title": "Navigation & Watchkeeping",
+    "question_text": "Is there evidence that a passage plan was prepared before the current voyage, covering the full route from berth to berth, and was it approved by the master?",
+    "objective": "To confirm that the vessel navigates according to a pre-approved plan that accounts for all known navigational hazards.",
+    "expected_evidence": "Signed and dated passage plan; ECDIS route or paper chart with planned track; waypoints covering full berth-to-berth route; abort criteria documented; master's countersignature.",
+    "guidance_notes": "Passage plans ending at the pilot boarding ground do not satisfy this requirement. Verify that the plan reflects actual conditions at time of departure, not a generic template."
+  },
+  {
+    "ref": "3.2.2",
+    "chapter": 3,
+    "chapter_title": "Navigation & Watchkeeping",
+    "question_text": "Is the Officer of the Watch maintaining a proper lookout in compliance with COLREGS Rule 5, and is bridge manning appropriate for prevailing conditions including restricted visibility?",
+    "objective": "To verify that collision avoidance requirements are met and the bridge is appropriately manned under all conditions.",
+    "expected_evidence": "Bridge manning policy; restricted visibility procedures posted on bridge; OOW interview; logbook entries confirming master called in restricted visibility; standing orders signed by officers.",
+    "guidance_notes": "Observe actual bridge practice during the inspection. A lone OOW in fog with no lookout and no attempt to call the master is a significant non-conformance."
+  },
+  {
+    "ref": "3.4.1",
+    "chapter": 3,
+    "chapter_title": "Navigation & Watchkeeping",
+    "question_text": "Is the vessel's ECDIS in use as the primary means of navigation, and have all navigating officers received type-specific training for the installed system?",
+    "objective": "To confirm ECDIS is correctly configured and operated by trained personnel.",
+    "expected_evidence": "ECDIS type-specific training certificates for all navigating officers; ECDIS set to display correct chart datums; ENC update records; back-up arrangement documented.",
+    "guidance_notes": "Generic ECDIS training does not satisfy type-specific requirements. Check that ENCs are updated in accordance with the vessel's chart correction procedure."
+  },
+  {
+    "ref": "4.1.2",
+    "chapter": 4,
+    "chapter_title": "Navigation Equipment",
+    "question_text": "Is the vessel's AIS correctly configured, broadcasting the vessel's identity, position, course and speed, and has the accuracy of AIS data been verified?",
+    "objective": "To confirm the vessel is correctly identified on AIS and the data broadcast is accurate.",
+    "expected_evidence": "AIS display showing correct MMSI, vessel name, IMO number, call sign, and voyage data; comparison of AIS position with GPS position; records of last AIS accuracy check.",
+    "guidance_notes": "Check for common errors: destination or ETA not updated, draught figure incorrect, voyage status set to 'under way using engine' when at anchor."
+  },
+  {
+    "ref": "4.3.1",
+    "chapter": 4,
+    "chapter_title": "Navigation Equipment",
+    "question_text": "Is the Voyage Data Recorder (VDR) or Simplified VDR (S-VDR) functioning correctly, has the annual performance test been completed, and is the certificate current?",
+    "objective": "To verify the VDR is operational and its annual test certificate is valid.",
+    "expected_evidence": "VDR annual performance test certificate (within 12 months); VDR maintenance log; evidence of last routine test; accessible capsule or float-free arrangement operational.",
+    "guidance_notes": "Verify the certificate is for annual testing, not just routine monthly checks. Review the VDR maintenance log for any reported defects."
+  },
+  {
+    "ref": "5.1.3",
+    "chapter": 5,
+    "chapter_title": "Cargo & Ballast Operations",
+    "question_text": "Is there a documented pre-arrival cargo checklist that was completed and countersigned by the Chief Officer before the vessel entered port limits for the current port call?",
+    "objective": "To confirm that a systematic pre-arrival cargo readiness check has been completed.",
+    "expected_evidence": "Completed and signed pre-arrival cargo checklist; Chief Officer countersignature; timestamp before pilot boarding; all checklist items addressed (no unexplained N/A entries).",
+    "guidance_notes": "Checklists completed in port after arrival, or missing required signatures, do not satisfy this requirement. Items marked N/A should be accompanied by a brief explanation."
+  },
+  {
+    "ref": "5.3.2",
+    "chapter": 5,
+    "chapter_title": "Cargo & Ballast Operations",
+    "question_text": "Is there evidence that cargo holds or tanks were inspected and found fit for cargo before loading commenced, and is an inspection record available?",
+    "objective": "To verify that holds or tanks were systematically checked for cleanliness, structural integrity, and fitness before loading.",
+    "expected_evidence": "Hold or tank inspection records signed by Chief Officer; condition photographs if required by charterer; cargo surveyor acceptance note where applicable; any deficiencies noted and resolved.",
+    "guidance_notes": "Inspect whether the record reflects a genuine survey or is a routine stamp. For tankers, check gas-free certificates and tank atmosphere readings."
+  },
+  {
+    "ref": "7.2.1",
+    "chapter": 7,
+    "chapter_title": "Machinery & Engine Room",
+    "question_text": "Is there a planned maintenance system (PMS) in place that covers all critical machinery, and is there evidence it is being executed and reviewed at regular intervals?",
+    "objective": "To confirm that critical machinery maintenance is planned, tracked, and completed on schedule.",
+    "expected_evidence": "PMS records (electronic or paper) covering main engine, generators, steering gear, and fire pumps; overdue maintenance items listed and managed; Chief Engineer review records.",
+    "guidance_notes": "A significant backlog of overdue maintenance items, particularly for critical equipment, indicates the PMS is not being actively managed. Check that completed jobs include actual completion dates."
+  },
+  {
+    "ref": "7.4.3",
+    "chapter": 7,
+    "chapter_title": "Machinery & Engine Room",
+    "question_text": "Has the emergency generator been tested under load at the required interval, and is there a record of the test?",
+    "objective": "To confirm the emergency generator is maintained in operational readiness.",
+    "expected_evidence": "Emergency generator load test records within last month; duration of test (minimum 30 minutes under load); auto-start test records; any defects identified and rectified.",
+    "guidance_notes": "Check that the test was conducted under load sufficient to demonstrate capability. Auto-start tests alone do not satisfy load test requirements."
+  },
+  {
+    "ref": "9.1.1",
+    "chapter": 9,
+    "chapter_title": "Pollution Prevention (MARPOL)",
+    "question_text": "Is the Oil Record Book Part I (machinery space operations) properly maintained, entries completed in ink, and signed by the officer in charge and the master?",
+    "objective": "To verify that all oil discharge and transfer operations are accurately recorded in compliance with MARPOL Annex I.",
+    "expected_evidence": "Oil Record Book Part I with all required entries; master's countersignature on each completed page; entries made in ink, no correction fluid; correct operation codes used.",
+    "guidance_notes": "Particular attention should be paid to bilge water discharges. Check that the 15 ppm separator was operational at the time of any overboard discharge and the ODM reading is recorded."
+  },
+  {
+    "ref": "10.2.3",
+    "chapter": 10,
+    "chapter_title": "Fire Safety & LSA",
+    "question_text": "Are fire and abandon ship drills conducted at the required intervals, are records maintained, and is the master's signature present on all drill records?",
+    "objective": "To confirm life-saving drills are conducted systematically and at the required frequency.",
+    "expected_evidence": "Drill records for fire and abandon ship drills within the past month; master's signature on all records; evidence of all crew participation; any deficiencies noted and corrected.",
+    "guidance_notes": "SOLAS requires fire and abandon ship drills at intervals not exceeding one month. Verify that the drill tested the full emergency response, not just the muster."
+  },
+  {
+    "ref": "10.4.1",
+    "chapter": 10,
+    "chapter_title": "Fire Safety & LSA",
+    "question_text": "Have all lifeboat and rescue boat engine starts and manoeuvring tests been conducted at the required intervals, and are maintenance records available?",
+    "objective": "To confirm survival craft propulsion systems are operational and maintained.",
+    "expected_evidence": "Lifeboat engine test records within past week (weekly run-up); monthly manoeuvring records; annual maintenance records; any defects logged and rectified.",
+    "guidance_notes": "Weekly engine run-ups should last at least three minutes. The monthly manoeuvre should demonstrate the boat can be driven under full control."
+  },
+  {
+    "ref": "11.1.2",
+    "chapter": 11,
+    "chapter_title": "Enclosed Space Entry",
+    "question_text": "Is there a documented enclosed space entry procedure in the vessel's SMS, and is there evidence that an atmosphere test was conducted and a permit-to-work issued before any enclosed space entry during this port call?",
+    "objective": "To confirm that all enclosed space entries are controlled through a formal permit system with atmospheric testing.",
+    "expected_evidence": "Enclosed space entry procedure in SMS; completed permit-to-work with atmosphere test results (O2, HC, H2S readings); entry supervisor signature; standby person assigned; rescue equipment listed.",
+    "guidance_notes": "A permit with no atmosphere readings or with readings but no date/time is not acceptable. Verify that the standby person remained at the entrance for the duration of entry."
+  },
+  {
+    "ref": "12.1.1",
+    "chapter": 12,
+    "chapter_title": "Ship Security (ISPS)",
+    "question_text": "Does the vessel have a current and approved Ship Security Plan (SSP), and is there evidence that it has been reviewed and updated following any security incidents or significant changes to operating area?",
+    "objective": "To confirm the vessel operates under a current, approved, and actively maintained Ship Security Plan.",
+    "expected_evidence": "Current SSP with flag state or recognised security organisation approval; evidence of SSO review following any security incidents; records of SSP amendments; crew awareness of SSP existence.",
+    "guidance_notes": "The SSP must not be made available to inspectors for confidentiality reasons, but its existence and approval status can be confirmed. Verify the SSO is appointed and aware of their responsibilities."
+  },
+  {
+    "ref": "12.3.2",
+    "chapter": 12,
+    "chapter_title": "Ship Security (ISPS)",
+    "question_text": "Have security drills been conducted at the required intervals, and are drill records signed by the master and Ship Security Officer?",
+    "objective": "To verify that the crew is exercised in security procedures at the required frequency.",
+    "expected_evidence": "Security drill records within the past three months; master and SSO signatures; evidence of crew participation; scenarios tested (access control, suspicious object, stowaways); drill debriefs recorded.",
+    "guidance_notes": "ISPS requires security drills at intervals not exceeding three months. Drills should test different security threats and not simply repeat the same scenario each time."
+  }
+]
