@@ -23,6 +23,7 @@ Follow these exact operational steps to deploy, synchronize, and run the platfor
 1. Target Directory Clone & Structure Check
 Ensure your physical workspace directory matches the structural tree matrix below before executing runtime scripts:
 
+```text
 maritime_mcp_package/
 │
 ├── data/                             # Raw Immutable JSON Data Assets
@@ -45,6 +46,7 @@ maritime_mcp_package/
 ├── .env                              # Local Environment Secrets File
 ├── pyproject.toml / setup.py         # Global Package Dependency Manifest
 └── run_tests.py                      # Master Integration Evaluation Suite
+```
 
 2. Virtual Environment Isolation
 Open a clean command terminal inside the root directory of your project folder and run the following routines to build and activate a clean virtual workspace:
