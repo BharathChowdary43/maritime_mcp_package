@@ -109,6 +109,7 @@ python run_tests.py
 To execute the baseline benchmark to test performance drops or run character matching verifications, adjust your application config launcher to execute maritime_mcp/server_regex.py as your tool server background pipe target, and trigger your evaluation suite:
 ```bash
 python run_tests.py
+```
 
 **Output Trace:** Check your query_output.json file. Notice how the regular expression character match breaks completely when faced with synonym-heavy questions or cross-domain topic switches, highlighting the power of the semantic RAG architecture upgrade.
 
